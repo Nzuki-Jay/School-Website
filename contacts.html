@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>School Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;900&display=swap"
+          rel="stylesheet">
+     <script src="https://kit.fontawesome.com/b55419cd6c.js"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/contacts.css"/>
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html"><h4>EGATOR</h4></a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <button  id="open-menu-btn">
+               <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="close-menu-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+    </nav>
+     <!----------NAV BAR ENDED---------->
+    <!-----------CONTACT PAGE---------->
+
+    <section class="contact">
+        <div class="container contact__container">
+
+             <div class="contact__info">
+                <img src="images/contact.svg"/>
+                <h2>Contact Us</h2>
+                <p id="description">For more info or any queries about our school.
+                Find us through this contacts. Our team is ready to help.
+                </p>
+                <div class="info">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>+254 743 547 353</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>egator254@gmail.com</p>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p> Nairobi, Kenya</p>
+                </div>
+                <div class="our__socials">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#l">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#l">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="contact__form">
+                 <form action="https://formspree.io/f/mleyjlzp" method="POST">
+                    <div class="form__names">
+                         <input type="text" name="Name" placeholder="First Name"/>
+                         <input type="text" name="Name" placeholder="Last Name"/>
+                    </div>
+                    <input id="email" type="text" name="email"
+                           placeholder="Your Email Address"/>
+                    <textarea>Write your message</textarea>
+                    <button type="submit">Send Message</button>
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <!-------------FOOTER SECTION------------->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <h4><a href="index.html">EGATOR</a></h4>
+                <p>
+                    Scale to new heights with our courses and real world
+                    practicals.
+                    Build a strong foundation for your career with us.
+                </p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Courses</a></li>
+                    <li><a href="about.html">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="index.html">Privacy Policy</a></li>
+                    <li><a href="about.html">Terms and condtions</a></li>
+                    <li><a href="about.html">Refund Policy</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+254 743 547 343</p>
+                    <p>egator254@gmail.com</p>
+                </div>
+                <ul class="socials">
+                    <li><a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></li>
+                    <li><a href="#l">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a></li>
+                    <li><a href="#l">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a></li>
+                </ul>
+
+            </div>
+
+        </div>
+         <div class="copyright">
+             <small> Copyright &copy; EGATOR</small>
+         </div>
+    </footer>
+</body>
+
+</html>

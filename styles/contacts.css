@@ -1,0 +1,148 @@
+.contact {
+    margin-top: 3rem;
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--color-bg1);
+    width: 70%;
+    height: 300px;
+    padding: 5rem;
+
+    border-radius: 16px;
+    gap: 1rem;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+
+.form__names {
+    display: flex;
+    gap: 3rem;
+}
+
+.form__names input {
+    background: var(--color-bg);
+    color: var(--color-light);
+    padding: 10px;
+    width: 100%;
+}
+
+form #email {
+    background: var(--color-bg);
+    color: var(--color-light);
+    padding: 10px;
+    width: 96%;
+}
+form textarea {
+    background: var(--color-bg);
+    color: var(--color-light);
+    padding: 10px;
+    width: 96%;
+    height: 150px;
+    resize: vertical;
+
+}
+
+form button {
+    background:  var(--color-danger);
+    width: 150px;
+    padding: 10px;
+    margin-top: 1rem;
+}
+
+
+.contact__info {
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: fit-content;
+    padding: 10px 20px;
+    border-radius: 16px;
+    align-items: flex-start;
+    margin-top: -120px;
+
+
+}
+
+.contact__info img {
+    width: 200px;
+    margin: 15px 0;
+}
+
+#description {
+    margin-top: -50px;
+    font-size: 14px;
+}
+
+.info {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.info i {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.info p {
+    margin-top: -5px;
+}
+
+.our__socials {
+   margin: 10px 0 20px;
+   display: flex;
+   gap: 1rem;
+}
+
+.our__socials a {
+    background: var(--color-bg1);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-bg1);
+        width: 60%;
+        height: fit-content;
+        padding: 5rem;
+
+        border-radius: 16px;
+        gap: 2rem;
+    }
+
+    .contact__info {
+        background: var(--color-primary);
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: fit-content;
+        padding: 10px 20px;
+        border-radius: 16px;
+        align-items: flex-start;
+        margin-top: 0;
+        margin-bottom: 30px;
+
+
+    }
+}
+
+
+

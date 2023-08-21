@@ -1,0 +1,156 @@
+/*---------------ACHIEVEMENTS----------*/
+.achievements {
+    margin-top: 3rem;
+}
+
+.achievement__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+
+.right p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievement-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--color-bg1);
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1.6rem;
+    transition: var(--transition);
+}
+
+.card:hover {
+    background: var(--color-bg2);
+
+}
+
+.icon {
+    background: var(--color-danger);
+    padding:  10px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.icon-2 {
+    background: var(--color-success);
+}
+
+.icon-3 {
+    background: var(--color-primary);
+    padding: 10px 13px;
+}
+
+.card h1 {
+    margin: 15px 0;
+}
+
+/*--------- ACHIEVEMENT END.---------*/
+
+/*--------- TEAM.---------*/
+
+.team {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0 ,0.5);
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team__member {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team__member:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.member__image img {
+    filter: saturate(0);
+}
+
+.team__member:hover img {
+    filter: saturate(1);
+}
+
+.member__info {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.member__info p {
+    color: var(--color-light);
+    margin: 10px 0;
+}
+
+.member__socials {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -100%;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    transition: var(--transition);
+
+}
+
+.member__socials a {
+        padding: 0.3rem;
+}
+
+.team__member:hover .member__socials {
+    right: 0;
+}
+
+/*--------- TEAM END.---------*/
+
+/*--------- TABLET VIEW---------*/
+
+@media screen and (max-width: 1024px) {
+    .achievements {
+        margin-top: 2rem;
+    }
+
+    .achievement__container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+
+    .team__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+/*--------- MOBILE VIEW---------*/
+
+@media screen and (max-width: 600px) {
+    .achievement-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+}
